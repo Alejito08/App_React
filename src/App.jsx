@@ -16,7 +16,8 @@ function App() {
     <ThemeProvider>
       <AuthProvider>
         <CartProvider>
-          <BrowserRouter>
+          {/* Se agrega basename para que coincida con el nombre del repositorio en GitHub Pages */}
+          <BrowserRouter basename="/App_React">
             <Toaster position="top-center" />
             <Layout>
               <Routes>
